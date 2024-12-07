@@ -1,0 +1,204 @@
+@font-face {
+  font-family: gilroy;
+  src: url(./Gilroy-Bold.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  background: #005C97;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+position: relative;
+}
+
+.quiz__start__page{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.quiz__start__page h1{
+  font-size: 3.8rem;
+  margin-bottom: 12px;
+}
+.quiz__start__page button{
+  padding-inline: 28px;
+  padding-block: 13px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #363795;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: box-shadow 0.4s ease;
+}
+
+.quiz__start_page button:hover{
+  box-shadow: 6px 6px 8px black;
+}
+.quiz__question__page{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.quiz__question__page h2{
+  font-size: 2.2rem;
+}
+.quiz__question__page .option{
+  background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin-top: 15px;
+  padding: 10px;
+  padding-inline: 10px;
+  width: 400px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+/* .question__content{
+  text-align: center;
+} */
+.nextQuestion{
+  padding-inline: 28px;
+  margin-top: 15px;
+  padding-block: 13px;
+  border: 0;
+  border-radius: 10px;
+  background-color: lightskyblue;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: box-shadow 0.4s ease;
+}
+
+.nextQuestion:hover{
+  box-shadow: 6px 6px 8px black;
+}
+.completed{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.completed h1{
+  font-size: 3rem;
+  /* color: white; */
+  text-align: center;
+}
+.completed h2{
+  font-size: 2.5rem;
+}
+.completed p{
+  font-size: 2rem;
+}
+.completed button{
+  padding-inline: 28px;
+  margin-top: 15px;
+  padding-block: 13px;
+  border: 0;
+  border-radius: 10px;
+  background-color: lightskyblue;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: box-shadow 0.4s ease;
+}
+
+
+@media (max-width:500px) {
+  .quiz__start__page h1{
+    font-size: 2.5rem;
+  }
+  .quiz__start__page button{
+    padding-inline: 24px;
+    padding-block: 10px;
+    font-size: 1rem;
+  }
+  
+  .quiz__question__page{
+    padding-inline: 10px;
+  }
+  .quiz__question__page h2{
+    font-size: 1.5rem;
+  }
+  .quiz__question__page .option{
+    width: 100%;
+    font-size: 1rem;
+  }
+  .nextQuestion{
+    padding-inline: 22px;
+    margin-top: 15px;
+    padding-block: 9px;
+    font-size: 1rem;
+  }
+  .completed h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .completed h2{
+    font-size: 1.6rem;
+    padding-block: 10px;
+  }
+  .completed p{
+    font-size: 1.5rem;
+  }
+  .completed button{
+    padding-inline: 22px;
+    padding-block: 9px;
+    font-size: 1rem;
+  }
+}
+@media (min-width:500px) {
+
+  
+  .quiz__question__page{
+    padding-inline: 10px;
+  }
+  .quiz__question__page h2{
+    font-size: 1.8rem;
+  }
+  .quiz__question__page .option{
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .nextQuestion{
+    padding-inline: 22px;
+    margin-top: 15px;
+    padding-block: 9px;
+    font-size: 1.2rem;
+  }
+  .completed h1{
+    font-size: 2.3rem;
+    /* color: white; */
+    text-align: center;
+  }
+  .completed h2{
+    font-size: 1.8rem;
+    padding-block: 10px;
+  }
+  .completed p{
+    font-size: 1.6rem;
+  }
+  .completed button{
+    padding-inline: 22px;
+    padding-block: 9px;
+    font-size: 1.2rem;
+  }
+}

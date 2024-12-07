@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz__start__page">
+    <h1>Quiz App</h1>
+    <button class="start">Start Quiz</button>
+  </div>
+
+
+  <template id="questionHtml">
+    <div class="quiz__question__page">
+      <div>
+      <div class="question">
+        <h2 class="question__content">Q)HTML stands for</h2>
+      </div>
+      <div class="option">
+        <input type="radio" id="q1" name="hello" value="hi" >
+        <label for="q1" id="option1">HyperText Bekaar Language</label>
+      </div>
+      <div class="option">
+        <input type="radio" id="q2" name="hello" value="hi" >
+        <label for="q2" id="option2">HyperText faltu Language</label>
+      </div>
+      <div class="option">
+        <input type="radio" id="q3"  name="hello" value="hi">
+        <label for="q3" id="option3">HyperText markup Language</label>
+      </div>
+      <div class="option">
+        <input type="radio" id="q4" name="hello" value="hi">
+        <label for="q4" id="option4">HyperText ulti Language :</label>
+      </div>
+  
+      <button class="nextQuestion">Next Question</button>
+    </div>
+    </div> 
+  
+  </template>
+
+  <template id="quiz__start__page">
+    <div class="quiz__start__page">
+      <h1>Quiz App</h1>
+      <button class="start">Start Quiz</button>
+    </div>
+  </template>
+
+
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
